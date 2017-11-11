@@ -38,3 +38,6 @@ set updatetime=750
 
 " copy sytemwide with yy
 set clipboard=unnamed
+
+" relative line numbers
+set relativenumber
