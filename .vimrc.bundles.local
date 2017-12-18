@@ -1,1 +1,2 @@
 Plugin 'vim-airline/vim-airline'
+Plugin 'haya14busa/incsearch.vim'
