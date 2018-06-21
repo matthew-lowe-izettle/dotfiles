@@ -1,7 +1,10 @@
 # Add your local tmux config here
 
 ## set fish to the default shell
-set-option -g default-shell /usr/local/bin/fish
+set -g default-shell /usr/local/bin/fish
+
+# Retach userspaces
+set -g default-command "reattach-to-user-namespace -l fish"
 
 ## tmux powerline
 set-option -g status on
@@ -16,5 +19,6 @@ set-option -g status-right "#(~/projects/tmux-powerline/powerline.sh right)"
 set -g status-position bottom
 
 # highlight the active pane
-set -g pane-active-border-fg brightblue
+set -g pane-active-border-fg red
 
+set-option -s escape-time 10
